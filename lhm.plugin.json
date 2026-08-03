@@ -1,0 +1,18 @@
+{
+  "identifier": "nhantour-genie-locker",
+  "name": "GenieLocker",
+  "version": "0.1.0",
+  "description": "Read-only MCP server for discovering, pricing, and checking quality-gated private GenieLocker inference.",
+  "author": "Intelix Systems LLC",
+  "authorUrl": "https://genie.locker/",
+  "homepage": "https://genie.locker/",
+  "category": "tools",
+  "tags": [
+    "mcp",
+    "private-ai",
+    "inference",
+    "ai-agents",
+    "gpu"
+  ],
+  "icon": "https://raw.githubusercontent.com/nhantour/genie-locker/main/assets/genie-locker-icon.png"
+}

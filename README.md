@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/genie-locker-icon.png" alt="GenieLocker icon" width="160" height="160">
+</p>
+
 # GenieLocker
 
 GenieLocker gives an AI agent a private OpenAI-compatible Qwen2.5-7B endpoint

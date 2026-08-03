@@ -3,6 +3,15 @@
   "name": "io.github.nhantour/genie-locker",
   "title": "GenieLocker",
   "description": "Discover and quote quality-gated private AI inference without creating or buying a locker.",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/nhantour/genie-locker/main/assets/genie-locker-icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
   "repository": {
     "url": "https://github.com/nhantour/genie-locker",
     "source": "github"
