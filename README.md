@@ -70,6 +70,9 @@ Client configuration:
 The connector source is MIT-licensed under `LICENSE-MCP`. That license applies
 only to the connector, not to the private broker implementation.
 
+Security reports should use the repository's private
+[security advisory form](https://github.com/nhantour/genie-locker/security/advisories/new).
+
 ## Minimal flow
 
 ```bash
