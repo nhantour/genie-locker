@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.nhantour/genie-locker",
+  "title": "GenieLocker",
+  "description": "Discover and quote quality-gated private AI inference without creating or buying a locker.",
+  "repository": {
+    "url": "https://github.com/nhantour/genie-locker",
+    "source": "github"
+  },
+  "websiteUrl": "https://genie.locker/",
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/nhantour/genie-locker-mcp:0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GENIE_BASE_URL",
+          "description": "Optional GenieLocker API base URL. Defaults to https://genie.locker.",
+          "format": "string",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}

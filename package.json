@@ -1,0 +1,44 @@
+{
+  "name": "@nhantour/genie-locker-mcp",
+  "version": "0.1.0",
+  "description": "Read-only MCP server for discovering, pricing, and checking private GenieLocker inference.",
+  "type": "module",
+  "bin": {
+    "genie-locker-mcp": "src/index.js"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test",
+    "check": "node --check src/index.js && node --check src/client.js && npm test"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "private-ai",
+    "inference",
+    "ai-agents",
+    "gpu"
+  ],
+  "author": "Intelix Systems LLC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nhantour/genie-locker.git"
+  },
+  "homepage": "https://genie.locker/",
+  "bugs": {
+    "url": "https://github.com/nhantour/genie-locker/issues"
+  },
+  "mcpName": "io.github.nhantour/genie-locker",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "zod": "^3.25.76"
+  }
+}

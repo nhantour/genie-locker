@@ -21,6 +21,7 @@ curl -s 'https://genie.locker/api/quote?envelope=l16&placement=resident&minutes=
 
 ## Agent integration
 
+- MCP server: `io.github.nhantour/genie-locker`
 - Full purchase and safety procedure: https://genie.locker/agent.md
 - OpenAPI 3.1: https://genie.locker/openapi.json
 - Machine-readable site index: https://genie.locker/llms.txt
@@ -32,6 +33,42 @@ curl -sL https://genie.locker/skill.sh | sh
 
 The first step can be a free trial credit allocation. No wallet or purchase is
 created by reading this repository or installing the skill.
+
+## MCP connector
+
+The public MCP connector is deliberately read-only. It exposes five tools for
+service status, commercial inventory, live quotes, recipe search, and credit
+pricing. It cannot create accounts, reserve GPUs, buy credits, create lockers,
+or send data to an inference model.
+
+Run it from source:
+
+```bash
+npm install
+npm start
+```
+
+Or, after the public image is available:
+
+```bash
+docker run --rm -i ghcr.io/nhantour/genie-locker-mcp:0.1.0
+```
+
+Client configuration:
+
+```json
+{
+  "mcpServers": {
+    "genie-locker": {
+      "command": "docker",
+      "args": ["run", "--rm", "-i", "ghcr.io/nhantour/genie-locker-mcp:0.1.0"]
+    }
+  }
+}
+```
+
+The connector source is MIT-licensed under `LICENSE-MCP`. That license applies
+only to the connector, not to the private broker implementation.
 
 ## Minimal flow
 
